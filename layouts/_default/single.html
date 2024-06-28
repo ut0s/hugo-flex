@@ -1,6 +1,8 @@
 {{ define "main" }}
 
   {{ partial "heading.html" . }}
+  {{ .TableOfContents }}
+  <hr>
   {{ .Content }}
   {{ partial "tags.html" . }}
   {{ partial "comments.html" . }}
